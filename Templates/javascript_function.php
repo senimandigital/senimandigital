@@ -64,3 +64,18 @@ function MM_jumpMenu(targ, selObj, restore){ //v3.0
       + "&" + selObj.name + "=" + selObj.options[selObj.selectedIndex].value + "'");
   } if (restore) selObj.selectedIndex=0;
 }
+
+
+/*
+var $_GET = new function(){
+var fullUrl   = window.location.href.split('?');
+var urlParams = fullUrl[1].split('&');  $_GET = new Array();
+for(i=0 ; i<=urlParams.length-1 ; ++i) {
+    var param = urlParams[i].split('=');
+    var name  = param[0];
+    var value = param[1];
+   $_GET[name] = value;
+}
+return $_GET;
+}
+*/
