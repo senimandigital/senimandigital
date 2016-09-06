@@ -1,3 +1,6 @@
+// var $WEBSITE = new Array();
+//    $WEBSITE['DOMAIN']['GAMBAR'] = 'http://senimandigital.kom/alat/gambar/';
+
 <?php /* Otomatis mengambil konten meta title dan description halaman, kemudian menambahkan-nya sebagai judul formulir */ ?>
 document.querySelectorAll('main header')[0].innerHTML  = '<h1>' + document.querySelectorAll('main header')[0].getAttribute('title') + '</h1>';
 document.querySelectorAll('main header')[0].innerHTML += document.querySelectorAll('meta[name=description]')[0].getAttribute('content');
@@ -10,40 +13,6 @@ for(l = 0 ; l < $label.length ; l++) { if ($label.item(l).getAttribute('for') !=
 $label.item(l).innerHTML = $label.item(l).innerHTML + '<span class="required"> *</span>';
 }}
 
-
-// var $WEBSITE = new Array();
-//    $WEBSITE['DOMAIN']['GAMBAR'] = 'http://senimandigital.kom/alat/gambar/';
-
-/*
-var $_GET = new function(){
-var fullUrl   = window.location.href.split('?');
-var urlParams = fullUrl[1].split('&');  $_GET = new Array();
-for(i=0 ; i<=urlParams.length-1 ; ++i) {
-    var param = urlParams[i].split('=');
-    var name  = param[0];
-    var value = param[1];
-   $_GET[name] = value;
-}
-return $_GET;
-}
-*/
-
-function xmlhttpPost(strURL, strID) { var xmlHttpReq = false;   var self = this;
-if(window.XMLHttpRequest)
-  {  self.xmlHttpReq = new XMLHttpRequest(); }
-     self.xmlHttpReq.open('GET', strURL, true);
-     self.xmlHttpReq.send();
-     self.xmlHttpReq.onreadystatechange = function() { if (self.xmlHttpReq.readyState == 4)
-  { document.getElementById(''+ strID + '').outerHTML = self.xmlHttpReq.responseText; }}}
-
-function MM_jumpMenu(targ, selObj, restore){ //v3.0
-  if (selObj.hasAttribute("href"))    { eval(targ + ".location='" + selObj.getAttribute("href") + "?" + selObj.name + "=" + selObj.options[selObj.selectedIndex].value + "'"); }
-  if (selObj.hasAttribute("request")) { var $request = selObj.getAttribute("request");
-      eval(targ + ".location='" + document.getElementsByName($request)[0].getAttribute("href")
-         + "?" + $request + "=" + document.getElementsByName($request)[0].options[document.getElementsByName($request)[0].selectedIndex].value
-      + "&" + selObj.name + "=" + selObj.options[selObj.selectedIndex].value + "'");
-  } if (restore) selObj.selectedIndex=0;
-}
 
 var $meta = document.querySelectorAll('meta[name=action-success]');
 for(m = 0 ; m < $meta.length ; m++) {
@@ -150,39 +119,3 @@ $input.item(0).outerHTML = $input.item(0).outerHTML
 + '<form name="smart-search"><ul style="list-style-type:none; padding:0px;">' + $tem
 + '</ul><div role="caption" style="padding-left: 10px; clear:both;"><input type="submit" name="cari" value="CARI" /> <input type="button" name="reset" value="KOSONGKAN" /></div></form>';
 }
-
-/*
-function getUrlVars() {
-var vars = [], hash;
-var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-
- for(var i = 0; i < hashes.length; i++) {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = hash[1];
-    }
-
-    return vars;
-}
-
-var win=null;
-function NewWindow(mypage,myname,w,h,scroll){
-var winl = (screen.width-w)/2;
-var wint = (screen.height-h)/2;
-var settings ='height='+h+',';
-settings +='width='+w+',';
-settings +='top='+wint+',';
-settings +='left='+winl+',';
-settings +='scrollbars='+scroll+',';
-settings +='resizable=yes';
-win=window.open(mypage,myname,settings);
-if(parseInt(navigator.appVersion) >= 4){win.window.focus();}
-}
-
-function getSelectedText(){
-if      (window.getSelection){    txt = window.getSelection(); }
-else if (document.getSelection) { txt = document.getSelection(); }
-else if (document.selection){     txt = document.selection.createRange().text; }
-else return; return txt;
-}
-*/
