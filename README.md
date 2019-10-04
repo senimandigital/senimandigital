@@ -7,6 +7,6 @@ Berbeda dengan kebanyakan CMS Opensource yang menyediakan paket distribusi publi
 
 Melalui website senimandigital setiap orang dapat mengkostumasi Senimandigital CMS Versi 1.0.0 dengan bebas, disediakan fasilitas pengembangan berbasis Web yang sangat memudahkan pengguna.
 
-Pengembangan System Informasi beserta variant-nya menggunakan Senimandigital CMS Versi 1.0.0 adalah langkah terbaik. Senimandigital CMS adalah salah satu CMS yang dikembangkan tanpa pembatasan, System yang anda bangun dengan Senimandigital CMS dapat diKonversi ke Framework dan CMS lain dengan mudah dan terautomatisasi melalui berbagai fasilitas yang tersedia pada website htpp://senimandigital.com/
+Pengembangan System Informasi beserta variant-nya menggunakan Senimandigital CMS Versi 1.0.0 adalah langkah terbaik. Senimandigital CMS adalah salah satu CMS yang dikembangkan tanpa pembatasan, System yang anda bangun dengan Senimandigital CMS dapat diKonversi ke Framework dan CMS lain dengan mudah dan terautomatisasi melalui berbagai fasilitas yang tersedia pada website http://senimandigital.com/
 
 terimakasih Salam senimandigital
